@@ -15,7 +15,9 @@ https://www.kiva.org/blog/be-the-spark-that-changes-the-world
   * the amount of time required for the loan's round trip is the loan term
 
 ### Implementation details
-* The code generates individual frames of video
+* Implemented using PHP, SQLite, FFMPEG, and iMovie
+* The code generates individual frames of video, in the style of stop-motion animation
+  * These frames are then stitched together at 24 fps to generate video
 * The video is composited from 5 layers of generated images:
   * base map (highlighting countries Kiva is active in) [generate_country_background.php]
   * lenders (showing currently-active lenders) [ChocoRenderer.php]
